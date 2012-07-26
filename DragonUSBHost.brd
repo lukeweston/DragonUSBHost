@@ -152,13 +152,13 @@
 <text x="19.52625" y="48.5775" size="0.8128" layer="21" ratio="15">33R</text>
 <text x="19.52625" y="46.0375" size="0.8128" layer="21" ratio="15">33R</text>
 <text x="3.96875" y="36.03625" size="0.8128" layer="21" ratio="15" rot="SR270">MICRO SD CARD</text>
-<text x="29.845" y="26.035" size="1.016" layer="21" ratio="15">smartenergygroups.com</text>
-<text x="29.21" y="24.765" size="0.8636" layer="21" ratio="15">Dragon USB Host Controller</text>
-<text x="29.5275" y="18.7325" size="0.7874" layer="21" ratio="15">Luke Weston, 2012</text>
+<text x="29.845" y="31.115" size="1.016" layer="21" ratio="15">smartenergygroups.com</text>
+<text x="29.21" y="29.845" size="0.8636" layer="21" ratio="15">Dragon USB Host Controller</text>
+<text x="29.5275" y="23.8125" size="0.7874" layer="21" ratio="15">Luke Weston, 2012</text>
 <text x="29.5275" y="17.4625" size="0.762" layer="21" ratio="15">Released under the CERN Open</text>
 <text x="28.2575" y="16.1925" size="0.762" layer="21" ratio="15">Hardware License: ohwr.org/cernohl</text>
-<text x="29.5275" y="22.5425" size="0.8128" layer="21" ratio="15">AR2317 GPIO {0, 1, 2, 3, 4}</text>
-<text x="29.21" y="20.955" size="0.8128" layer="21" ratio="15">= {MISO, MOSI, SCK, !Sd!, !USB!}</text>
+<text x="29.5275" y="27.6225" size="0.8128" layer="21" ratio="15">AR2317 GPIO {0, 1, 2, 3, 4}</text>
+<text x="29.21" y="26.035" size="0.8128" layer="21" ratio="15">= {MISO, MOSI, SCK, !Sd!, !USB!}</text>
 <text x="29.5275" y="0.3175" size="0.8128" layer="21" ratio="15">GND</text>
 <text x="32.0675" y="0.3175" size="0.8128" layer="21" ratio="15">12V</text>
 <text x="34.925" y="0.3175" size="0.8128" layer="21" ratio="15">5V</text>
@@ -572,6 +572,44 @@ Source: http://www.maxstream.net/products/xbee/datasheet_XBee_OEM_RF-Modules.pdf
 </package>
 </packages>
 </library>
+<library name="OSHW">
+<packages>
+<package name="OSHW_6X100_NOTEXT">
+<wire x1="1.2192" y1="0.7112" x2="0.9652" y2="0.127" width="0.1524" layer="21"/>
+<wire x1="0.9652" y1="0.127" x2="0.8382" y2="0.2032" width="0.1524" layer="21"/>
+<wire x1="0.8382" y1="0.2032" x2="0.5334" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.5334" y1="0" x2="0.3048" y2="0.2286" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="0.2286" x2="0.508" y2="0.5588" width="0.1524" layer="21"/>
+<wire x1="0.508" y1="0.5588" x2="0.381" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="0.381" y1="0.889" x2="0" y2="0.9652" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.9652" x2="0" y2="1.2954" width="0.1524" layer="21"/>
+<wire x1="0" y1="1.2954" x2="0.381" y2="1.3462" width="0.1524" layer="21"/>
+<wire x1="0.381" y1="1.3462" x2="0.5334" y2="1.6764" width="0.1524" layer="21"/>
+<wire x1="0.5334" y1="1.6764" x2="0.3048" y2="2.0066" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="2.0066" x2="0.5334" y2="2.2352" width="0.1524" layer="21"/>
+<wire x1="0.5334" y1="2.2352" x2="0.8636" y2="2.0066" width="0.1524" layer="21"/>
+<wire x1="0.8636" y1="2.0066" x2="1.1684" y2="2.1336" width="0.1524" layer="21"/>
+<wire x1="1.1684" y1="2.1336" x2="1.2446" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.2446" y1="2.54" x2="1.5748" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.5748" y1="2.54" x2="1.651" y2="2.1336" width="0.1524" layer="21"/>
+<wire x1="1.651" y1="2.1336" x2="1.9558" y2="2.0066" width="0.1524" layer="21"/>
+<wire x1="1.9558" y1="2.0066" x2="2.3114" y2="2.2352" width="0.1524" layer="21"/>
+<wire x1="2.3114" y1="2.2352" x2="2.54" y2="2.0066" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="2.0066" x2="2.3114" y2="1.6764" width="0.1524" layer="21"/>
+<wire x1="2.3114" y1="1.6764" x2="2.4384" y2="1.3716" width="0.1524" layer="21"/>
+<wire x1="2.4384" y1="1.3716" x2="2.8194" y2="1.2954" width="0.1524" layer="21"/>
+<wire x1="2.8194" y1="1.2954" x2="2.8194" y2="0.9652" width="0.1524" layer="21"/>
+<wire x1="2.8194" y1="0.9652" x2="2.4638" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="2.4638" y1="0.889" x2="2.3114" y2="0.5588" width="0.1524" layer="21"/>
+<wire x1="2.3114" y1="0.5588" x2="2.54" y2="0.2286" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.2286" x2="2.3114" y2="0" width="0.1524" layer="21"/>
+<wire x1="2.3114" y1="0" x2="2.0066" y2="0.2032" width="0.1524" layer="21"/>
+<wire x1="2.0066" y1="0.2032" x2="1.8542" y2="0.127" width="0.1524" layer="21"/>
+<wire x1="1.8542" y1="0.127" x2="1.6256" y2="0.7112" width="0.1524" layer="21"/>
+<wire x1="1.2192" y1="0.7112" x2="1.6256" y2="0.7112" width="0.1524" layer="21" curve="-306.869898"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -819,6 +857,7 @@ Source: http://www.maxstream.net/products/xbee/datasheet_XBee_OEM_RF-Modules.pdf
 <element name="R5" library="freetronics-master-v1" package="0805" value="1k" x="45.4025" y="45.72" smashed="yes" rot="R180">
 <attribute name="VALUE" x="44.7675" y="44.1325" size="0.8128" layer="27" ratio="15"/>
 </element>
+<element name="U$21" library="OSHW" package="OSHW_6X100_NOTEXT" value="" x="37.465" y="18.415"/>
 </elements>
 <signals>
 <signal name="GND">
