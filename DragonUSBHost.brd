@@ -152,7 +152,7 @@
 <text x="19.52625" y="48.5775" size="0.8128" layer="21" ratio="15">33R</text>
 <text x="19.52625" y="46.0375" size="0.8128" layer="21" ratio="15">33R</text>
 <text x="3.96875" y="36.03625" size="0.8128" layer="21" ratio="15" rot="SR270">MICRO SD CARD</text>
-<text x="29.21" y="30.63875" size="1.0668" layer="21" ratio="16">smartenergygroups.com</text>
+<text x="29.845" y="30.63875" size="1.0668" layer="21" ratio="16">smartenergygroups.com</text>
 <text x="29.21" y="29.21" size="0.8636" layer="21" ratio="15">Dragon USB Host Controller</text>
 <text x="29.5275" y="23.8125" size="0.7874" layer="21" ratio="15">Luke Weston, 2012</text>
 <text x="29.5275" y="17.4625" size="0.762" layer="21" ratio="15">Released under the CERN Open</text>
@@ -1361,17 +1361,6 @@
 <text x="-0.862" y="1.1955" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.916" y="-1.567" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-<package name="HC49US">
-<description>&lt;B&gt;CRYSTAL&lt;/B&gt;</description>
-<wire x1="-3.429" y1="-2.286" x2="3.429" y2="-2.286" width="0.2032" layer="21"/>
-<wire x1="3.429" y1="2.286" x2="-3.429" y2="2.286" width="0.2032" layer="21"/>
-<wire x1="3.429" y1="2.286" x2="3.429" y2="-2.286" width="0.2032" layer="21" curve="-180"/>
-<wire x1="-3.429" y1="2.286" x2="-3.429" y2="-2.286" width="0.2032" layer="21" curve="180"/>
-<pad name="1" x="-2.54" y="0" drill="0.8128" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" rot="R90"/>
-<text x="-5.08" y="-3.937" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-5.08" y="2.667" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
 </packages>
 </library>
 <library name="freetronics-luke">
@@ -1551,6 +1540,22 @@ Source: http://www.maxstream.net/products/xbee/datasheet_XBee_OEM_RF-Modules.pdf
 </package>
 </packages>
 </library>
+<library name="SparkFun">
+<packages>
+<package name="CRYSTAL-SMD-5X3">
+<wire x1="-0.6" y1="1.6" x2="0.6" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="0.3" x2="2.5" y2="-0.3" width="0.2032" layer="21"/>
+<wire x1="0.6" y1="-1.6" x2="-0.6" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="0.3" x2="-2.5" y2="-0.3" width="0.2032" layer="21"/>
+<smd name="1" x="-1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
+<smd name="3" x="1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
+<smd name="4" x="-1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
+<smd name="2" x="1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
+<text x="-2.54" y="1.905" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1722,8 +1727,8 @@ Source: http://www.maxstream.net/products/xbee/datasheet_XBee_OEM_RF-Modules.pdf
 <element name="C3" library="freetronics-master-v1" package="0805" value="22pF" x="24.4475" y="36.83" smashed="yes" rot="R270">
 <attribute name="VALUE" x="23.1775" y="34.44875" size="0.8128" layer="27" ratio="15"/>
 </element>
-<element name="R11" library="freetronics-master-v1" package="0805" value="1k" x="45.4025" y="52.3875" smashed="yes" rot="R180">
-<attribute name="VALUE" x="44.7675" y="50.8" size="0.8128" layer="27" ratio="15"/>
+<element name="R11" library="freetronics-master-v1" package="0805" value="330R" x="45.4025" y="52.3875" smashed="yes" rot="R180">
+<attribute name="VALUE" x="43.97375" y="50.8" size="0.8128" layer="27" ratio="15"/>
 </element>
 <element name="LED3" library="freetronics-master-v1" package="LED-0805" value="Power" x="48.895" y="52.3875" smashed="yes">
 <attribute name="VALUE" x="47.3075" y="50.4825" size="0.8128" layer="27" ratio="15"/>
@@ -1744,9 +1749,6 @@ Source: http://www.maxstream.net/products/xbee/datasheet_XBee_OEM_RF-Modules.pdf
 </element>
 <element name="R8" library="freetronics-master-v1" package="0805" value="10k" x="20.6375" y="45.085" smashed="yes">
 <attribute name="VALUE" x="22.225" y="44.45" size="0.8128" layer="27" ratio="15"/>
-</element>
-<element name="Q1" library="freetronics-master-v1" package="HC49US" value="12 MHz" x="22.86" y="41.275" smashed="yes">
-<attribute name="VALUE" x="20.6375" y="39.37" size="0.8128" layer="27" ratio="15"/>
 </element>
 <element name="F1" library="freetronics-luke" package="1812" value="500mA" x="24.4475" y="56.1975" smashed="yes">
 <attribute name="VALUE" x="22.70125" y="58.26125" size="0.8128" layer="27" ratio="15"/>
@@ -1792,13 +1794,16 @@ Source: http://www.maxstream.net/products/xbee/datasheet_XBee_OEM_RF-Modules.pdf
 <element name="LED2" library="freetronics-master-v1" package="LED-0805" value="Assoc" x="48.895" y="45.72" smashed="yes">
 <attribute name="VALUE" x="47.14875" y="43.815" size="0.8128" layer="27" ratio="15"/>
 </element>
-<element name="R4" library="freetronics-master-v1" package="0805" value="1k" x="45.4025" y="49.2125" smashed="yes" rot="R180">
-<attribute name="VALUE" x="44.92625" y="47.625" size="0.8128" layer="27" ratio="15"/>
+<element name="R4" library="freetronics-master-v1" package="0805" value="330R" x="45.4025" y="49.2125" smashed="yes" rot="R180">
+<attribute name="VALUE" x="43.97375" y="47.625" size="0.8128" layer="27" ratio="15"/>
 </element>
-<element name="R5" library="freetronics-master-v1" package="0805" value="1k" x="45.4025" y="45.72" smashed="yes" rot="R180">
-<attribute name="VALUE" x="44.7675" y="44.1325" size="0.8128" layer="27" ratio="15"/>
+<element name="R5" library="freetronics-master-v1" package="0805" value="330R" x="45.4025" y="45.72" smashed="yes" rot="R180">
+<attribute name="VALUE" x="43.97375" y="44.1325" size="0.8128" layer="27" ratio="15"/>
 </element>
 <element name="U$21" library="OSHW" package="OSHW_6X100_NOTEXT" value="" x="37.465" y="18.415"/>
+<element name="Q1" library="SparkFun" package="CRYSTAL-SMD-5X3" value="12MHz" x="22.86" y="41.275" smashed="yes">
+<attribute name="VALUE" x="16.1925" y="40.3225" size="0.8128" layer="27" ratio="15"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1913,12 +1918,17 @@ Source: http://www.maxstream.net/products/xbee/datasheet_XBee_OEM_RF-Modules.pdf
 <signal name="N$27">
 <contactref element="IC1" pad="25"/>
 <contactref element="C3" pad="1"/>
-<contactref element="Q1" pad="2"/>
-<wire x1="24.4475" y1="37.73" x2="24.4475" y2="40.3225" width="0.4064" layer="1"/>
-<wire x1="24.4475" y1="40.3225" x2="25.4" y2="41.275" width="0.4064" layer="1"/>
-<wire x1="26.19" y1="45.395" x2="26.19" y2="43.97" width="0.2032" layer="1"/>
-<wire x1="26.19" y1="43.97" x2="25.4" y2="43.18" width="0.2032" layer="1"/>
-<wire x1="25.4" y1="43.18" x2="25.4" y2="41.275" width="0.2032" layer="1"/>
+<contactref element="Q1" pad="3"/>
+<wire x1="24.4475" y1="37.73" x2="24.1825" y2="37.73" width="0.4064" layer="1"/>
+<wire x1="24.1825" y1="37.73" x2="22.86" y2="39.0525" width="0.4064" layer="1"/>
+<wire x1="22.86" y1="39.0525" x2="22.86" y2="41.11625" width="0.4064" layer="1"/>
+<wire x1="22.86" y1="41.11625" x2="23.97125" y2="42.2275" width="0.4064" layer="1"/>
+<wire x1="23.97125" y1="42.2275" x2="24.5125" y2="42.2275" width="0.4064" layer="1"/>
+<wire x1="24.5125" y1="42.2275" x2="24.71" y2="42.425" width="0.4064" layer="1"/>
+<wire x1="26.19" y1="45.395" x2="26.19" y2="44.44625" width="0.2032" layer="1"/>
+<wire x1="26.19" y1="44.44625" x2="24.92375" y2="43.18" width="0.2032" layer="1"/>
+<wire x1="24.92375" y1="43.18" x2="24.92375" y2="42.63875" width="0.2032" layer="1"/>
+<wire x1="24.92375" y1="42.63875" x2="24.71" y2="42.425" width="0.2032" layer="1"/>
 </signal>
 <signal name="VBUS">
 <contactref element="L1" pad="2"/>
@@ -1929,11 +1939,17 @@ Source: http://www.maxstream.net/products/xbee/datasheet_XBee_OEM_RF-Modules.pdf
 <signal name="N$30">
 <contactref element="IC1" pad="24"/>
 <contactref element="C4" pad="1"/>
+<wire x1="24.44" y1="47.145" x2="24.44" y2="44.76" width="0.2032" layer="1"/>
 <contactref element="Q1" pad="1"/>
-<wire x1="24.44" y1="47.145" x2="24.44" y2="45.395" width="0.2032" layer="1"/>
-<wire x1="24.44" y1="45.395" x2="20.32" y2="41.275" width="0.2032" layer="1"/>
-<wire x1="21.2725" y1="37.73" x2="21.2725" y2="40.3225" width="0.4064" layer="1"/>
-<wire x1="21.2725" y1="40.3225" x2="20.32" y2="41.275" width="0.4064" layer="1"/>
+<wire x1="21.01" y1="40.125" x2="21.01" y2="38.9975" width="0.4064" layer="1"/>
+<wire x1="21.01" y1="38.9975" x2="21.2725" y2="38.735" width="0.4064" layer="1"/>
+<wire x1="21.2725" y1="38.735" x2="21.2725" y2="37.73" width="0.4064" layer="1"/>
+<wire x1="21.01" y1="40.125" x2="19.565" y2="40.125" width="0.2032" layer="1"/>
+<wire x1="19.565" y1="40.125" x2="19.05" y2="40.64" width="0.2032" layer="1"/>
+<wire x1="19.05" y1="40.64" x2="19.05" y2="42.70375" width="0.2032" layer="1"/>
+<wire x1="19.05" y1="42.70375" x2="19.685" y2="43.33875" width="0.2032" layer="1"/>
+<wire x1="19.685" y1="43.33875" x2="23.01875" y2="43.33875" width="0.2032" layer="1"/>
+<wire x1="24.44" y1="44.76" x2="23.01875" y2="43.33875" width="0.2032" layer="1"/>
 </signal>
 <signal name="!INTERRUPT">
 <contactref element="IC1" pad="18"/>
